@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Library</title>
+        <link rel="icon" href="/img/book.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div id="particles-js"></div>
+        {{>login}}
+        {{>signup}}
+        {{>header}}
+        <div class="main-content">
+            <h1>{{title}}</h1>
+            <p>Use this site to connect to my Library</p>
+            <form class="search" id="search" onsubmit="console.log('submitted')">
+                <input placeholder="Value" id="value">
+                <select name="sortBy" id="sortBy">
+                <option value="Title">Title</option>
+                <option value="ISBN">ISBN</option>
+                </select>
+                <button>Search</button>
+            </form>
+
+            <div>
+                <img src="" id="thumb">
+                <a href="#" id="msg1"></a>
+                <p id="msg2"></p>
+                <p id="msg3"></p>
+                <p id="msg4"></p>
+                <a href="#" id="msg5"></a>
+                <p id="msg6"></p>
+                <p id="msg7"></p>
+                <p id="msg8"></p>
+                <p id="msg9"></p>
+                <p id="msg10"></p>
+            </div>
+        </div>
+
+        {{>footer}}
+
+        <script src="/js/search.js"></script>
+    </body>
+</html>

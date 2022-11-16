@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Library</title>
+        <link rel="icon" href="/img/book.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div id="particles-js"></div>
+        {{>login}}
+        {{>signup}}
+        {{>header}}
+        <div class="main-content">
+            <h1>{{title}}</h1>
+            <p>Use this site to connect to the Library</p>
+
+            <form id="ISBNForm">
+                <input placeholder="ISBN" id="ISBNSearch" required>
+                <button>Search</button>
+            </form>
+
+            <p id="msg1"></p>
+            <p id="msg2"></p>
+            <p id="msg3"></p>
+            <p id="msg4"></p>
+            <p id="msg5"></p>
+            <p id="msg6"></p>
+            <p id="msg7"></p>
+            <p id="msg8"></p>
+            <p id="msg9"></p>
+        </div>
+
+        {{>footer}}
+
+        <script src="/js/ISBNinfo.js"></script>
+    </body>
+</html>

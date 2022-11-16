@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Library</title>
+        <link rel="icon" href="/img/book.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/profile.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div id="particles-js"></div>
+        {{>login}}
+        {{>signup}}
+        {{>header}}
+
+        <div class="main-content">
+            <h1>{{title}}</h1>
+
+            <div class="row">
+                <div class="sidebar column left">
+                    <img class="avatar_p" id="avatar_img" src="img/avatar.png">
+                    <div class="overlay">
+                        <form id="avatar">
+                            <input type="file" id="file">
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="main column right">
+                    <h3 id="name"></h3>
+                    <a id="about" class="inline" href="#">About</a>
+                    <a id="loans" class="inline" href="#">Loans</a>
+                    <hr>
+                    <div>
+                        <p id="user_name" class="inline"></p>
+                        <form id="name_form">
+                            <button id="edit" class="inline">Edit</button>
+                            <input type="text" id="username" placeholder="uname" required autocomplete="off">
+                        </form>
+                    </div>
+                    <div>
+                        <p id="pword" class="inline"></p>
+                        <form id="psw_form">
+                            <button id="edit2" class="inline">Edit</button>
+                            <input type="password" id="pword_val" placeholder="password" required autocomplete="off">
+                        </form>
+                    </div>
+                    <div>
+                        <p id="emailedit" class="inline"></p>
+                        <form id="email_form">
+                            <button id="edit3" class="inline">Edit</button>
+                            <input type="text" id="email_val" placeholder="email" required autocomplete="off">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{>footer}}
+
+        <script src="/js/functions.js"></script>
+        <script src="/js/profile.js"></script>
+    </body>
+</html>

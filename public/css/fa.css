@@ -1,0 +1,30 @@
+/* Style all font awesome icons */
+.fa {
+    padding: 0px;
+    font-size: 25px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-globe {
+    color: #95ffe8;
+  }
+  
+  /* Twitter */
+  .fa-envelope {
+    color: #95ffe8;
+  }
+
+  footer .social {
+      padding-top: inherit;
+      float: right;
+  }

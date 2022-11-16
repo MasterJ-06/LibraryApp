@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Library</title>
+        <link rel="icon" href="/img/book.png">
+        <link rel="stylesheet" href="/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div id="particles-js"></div>
+        {{>login}}
+        {{>signup}}
+        {{>header}}
+        <div class="main-content">
+            <h1>{{title}}</h1>
+            <p>Use this site to connect to the Library</p>
+
+            <form id="ValidateForm">
+                <input placeholder="ISBN" id="ValidateInput" required>
+                <button>Search</button>
+            </form>
+
+            <p id="msg1"></p>
+        </div>
+
+        {{>footer}}
+
+        <script src="/js/ValidateISBN.js"></script>
+    </body>
+</html>
